@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: ${GRH_DB_URL:jdbc:postgresql://localhost:5432/gestion_paiement_test}
+    driver-class-name: org.postgresql.Driver
+    username: ${GRH_DB_USERNAME:postgres}
+    password: ${GRH_DB_PASSWORD}
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true

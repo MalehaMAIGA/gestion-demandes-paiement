@@ -16,4 +16,8 @@ public interface UtilisateurRepository extends JpaRepository<Utilisateur, Intege
 
     // Rechercher un utilisateur par son telephone
     Optional<Utilisateur> findByTelephone(String telephone);
+
+
+    Optional<Utilisateur> findByEmail(String email);
+
 }
